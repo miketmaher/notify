@@ -1,0 +1,15 @@
+{
+  "name": "notify",
+  "version": "1.0.0",
+  "description": "Demo for KAX Media",
+  "main": "main.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "author": "Mike Maher",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^1.2.0",
+    "node-sass": "^4.9.2"
+  }
+}

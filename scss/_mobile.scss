@@ -1,0 +1,19 @@
+@include mediaXl {
+  
+}
+
+@include mediaLg {
+  
+}
+
+@include mediaMd {
+  #showcase {
+    .img-responsive {
+      display: none;
+    }
+  }
+}
+
+@include mediaSm {
+  
+}

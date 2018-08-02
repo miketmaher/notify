@@ -1,1 +1,151 @@
 @import 'config';
+
+
+#showcase {
+  border-top: 3px solid $primary-color;
+  background: url('../img/showcase.png');
+  background-size: cover;
+  background-position: center; 
+  height: 350px;
+  overflow: hidden;
+  .container {
+    height: 350px;
+    position: relative;
+    .col-md-6 {
+      align-items: center;
+      .branding {
+        margin-top: 75px;
+      }
+      .img-responsive {
+        height: 300px;
+        margin-top: 47px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .icons {
+        span {
+          margin-top: 1rem;
+          padding: 1rem;
+          background: rgba(#333, 0.7);
+          display: inline-flex;
+          width: 60px;
+          height: 60px;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          border-radius: 50%;
+          .fab {
+            color: $secondary-color;
+          }
+          &:hover {
+            @include easeInOut;
+            background: $primary-color;
+            .fab {
+              @include easeInOut;
+              color: $dark;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#features {
+  padding: 2rem;
+  .col-md-4 {
+    padding: 2rem;
+    h5 {
+      font-weight: bold;
+      margin: 2rem 0;
+    }
+    .feature-icon {
+      padding: 2rem;
+      background: $primary-color;
+      display: inline-flex;
+      width: 80px;
+      height: 80px;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      border-radius: 50%;
+      .fa {
+        color: $light
+      }
+    }
+  }
+}
+
+.section-grey {
+  background: $secondary-color;
+}
+
+#video {
+  padding: 3rem 0;
+  .input-group {
+    width: 50%;
+
+  }
+  img {
+    max-width: 100%;
+    padding: 1rem;
+  }
+}
+
+#people {
+  padding: 3rem 0;
+  .testimonial-slider,
+  .client-slider {
+    padding-bottom: 3rem;
+  }
+  .name {
+    margin-top: 1.5rem;
+  }
+}
+
+#social-icons {
+  h4 {
+    font-weight: bold;
+  }
+  .text-muted {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .icon {
+      margin: 0 .5rem;
+      padding: 1rem;
+      background: darken($secondary-color, 10%);
+      border-radius: 50%;
+      .fab {
+        color: $light;
+        font-size: 2rem;
+      }
+
+      &:hover {
+        @include easeInOut;
+        background: $primary-color;
+      }
+    }
+  }
+}
+
+footer {
+  padding: 5rem;
+  a {
+    padding: 2rem;
+    color: darken($secondary-color, 25%);
+    &:hover {
+      @include easeInOut;
+      color: lighten($dark, 10%);
+      text-decoration: none;
+    }
+  }
+}
+
+@import 'mobile';

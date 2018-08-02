@@ -2,3 +2,62 @@ $primary-color: #2ecc71;
 $secondary-color: #e3e3e3;
 $light: #fff;
 $dark: #000;
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin easeInOut {
+  transition: all .2s ease-in-out;
+}
+
+.text-light {
+  color: $light;
+}
+
+.bg-light {
+  background: $light;
+}
+
+.text-dark {
+  color: $dark;
+}
+
+.bg-dark {
+  background: $dark;
+}
+
+.btn-primary {
+  color: $light;
+  background: $primary-color;
+  border-color: $primary-color;
+  &:hover {
+    @include easeInOut;
+    background: darken($primary-color, 25%);
+    border: darken($primary-color, 25%);
+  }
+}
+
+@mixin mediaSm {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}

@@ -1,5 +1,8 @@
 @import 'config';
 
+body {
+  display: none;
+}
 
 #showcase {
   border-top: 3px solid $primary-color;

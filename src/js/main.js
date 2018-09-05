@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+  const body = document.querySelector('body');
+  body.style.display = 'block';
+  
   $('.testimonial-slider').slick({
     autoplay: true,
     autoplaySpeed: 5000

@@ -5,13 +5,18 @@
   "main": "main.js",
   "homepage": "https://miketmaher.github.io/notify",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css --recursive",
+    "sass": "node-sass -w scss/ -o src/css --recursive",
     "deploy": "gh-pages -d dist"
   },
   "author": "Mike Maher",
   "license": "ISC",
   "dependencies": {
     "gh-pages": "^1.2.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-uglify-es": "^1.0.4",
     "node-sass": "^4.9.2"
   }
 }

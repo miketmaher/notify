@@ -22,6 +22,9 @@
     background: #176437;
     border: #176437; }
 
+body {
+  display: none; }
+
 #showcase {
   border-top: 3px solid #2ecc71;
   background: url("../img/showcase.png");
@@ -136,3 +139,9 @@ footer {
 @media screen and (max-width: 768px) {
   #showcase .img-responsive {
     display: none; } }
+
+@media screen and (max-width: 576px) {
+  footer a {
+    display: block;
+    width: 100%;
+    padding: 1rem; } }

@@ -6,6 +6,7 @@
   "homepage": "https://miketmaher.github.io/notify",
   "scripts": {
     "sass": "node-sass -w scss/ -o src/css --recursive",
+    "build": "gulp",
     "deploy": "gh-pages -d dist"
   },
   "author": "Mike Maher",
